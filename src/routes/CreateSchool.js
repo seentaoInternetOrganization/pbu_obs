@@ -1,3 +1,7 @@
+/**
+* @author zhaowenhui
+* @descripion 新建学校
+**/
 import React from 'react';
 import { connect } from 'dva';
 import Header from '../components/layout/Header';
