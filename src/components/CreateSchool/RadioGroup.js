@@ -35,8 +35,8 @@ class RadioGroup extends Component {
                                         type="button"
                                         value={item}
                                         onClick={this.onClick.bind(this,index)}
-                                        />
-                                        {item}
+                                    />
+                                    {item}
                                 </label>
                             </div>
                    })}
