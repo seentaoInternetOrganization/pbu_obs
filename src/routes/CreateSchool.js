@@ -8,11 +8,11 @@ import Header from '../components/layout/Header';
 import Aside from '../components/layout/Aside';
 import Footer from '../components/layout/Footer';
 import Container from '../components/layout/Container';
-import SchoolFrom from '../components/layout/SchoolFrom';
+import SchoolList from '../components/schoolMange/SchoolList';
 
 function CreateSchool() {
   return (
-    <section id="container" className="">
+    <section>
       <Header />
       <Aside />
       <Container />
@@ -21,8 +21,5 @@ function CreateSchool() {
 
   );
 }
-
-CreateSchool.propTypes = {
-};
 
 export default connect()(CreateSchool);
