@@ -8,14 +8,16 @@ import Header from '../components/layout/Header';
 import Aside from '../components/layout/Aside';
 import Footer from '../components/layout/Footer';
 import Container from '../components/layout/Container';
-import SchoolList from '../components/schoolMange/SchoolList';
+import SchoolList from '../components/schoolManage/SchoolList';
 
-function CreateSchool() {
+function CreateSchool({ location }) {
   return (
     <section>
       <Header />
       <Aside />
-      <Container />
+      <Container location={location}>
+        <SchoolList/>
+      </Container>
       <Footer />
     </section>
 
