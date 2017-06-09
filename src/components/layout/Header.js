@@ -1,5 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
+import request from '../../utils/request'
 
 function Header(){
   return(
@@ -13,7 +14,7 @@ function Header(){
         </div>
         <div className="top-nav ">
             <ul className="nav pull-right top-menu">
-                <li className="dropdown">
+                <li className="dropdown" onClick={()=>{request('test', {})}}>
                     <a data-toggle="dropdown" className="dropdown-toggle" href="#">
                         <span className="username">注册</span>
                     </a>
