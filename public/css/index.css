@@ -1,4 +1,7 @@
 @charset "utf-8";
+input:focus {
+  border: 1px solid #35B355!important;
+}
 .notify-row {
   margin-top: 20px;
 }
@@ -60,4 +63,30 @@
 .address {
   width: 412px;
   display: inline-block;
+}
+.noborder {
+  border: 0!important;
+}
+.search_new {
+  width: 300px;
+  display: inline-block;
+  border: 1px solid #e2e2e4;
+}
+.search:focus {
+  width: 300px;
+  border: 1px solid #35B355;
+}
+.btn-success-new {
+  float: right;
+  margin-top: 10px;
+}
+.edit {
+  text-decoration: underline;
+}
+.edit:hover {
+  color: red;
+  cursor: pointer;
+}
+.content a {
+  display: block;
 }

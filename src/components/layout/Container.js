@@ -1,16 +1,13 @@
 /**
 * @author zhaowenhui
-* @descripion 新建表单
+* @descripion 中间内容
 **/
 import React from 'react';
 import { Radio } from 'antd';
 const RadioGroup = Radio.Group;
-import SchoolFrom from './SchoolFrom';
+import SchoolFrom from '../CreateSchool/SchoolFrom';
 
 class Container extends React.Component{
-
-
-
   render(){
     return(
       <section id="main-content">
