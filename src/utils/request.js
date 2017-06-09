@@ -23,14 +23,16 @@ function checkStatus(response) {
  * @param  {object} [options] The options we want to pass to "fetch"
  * @return {object}           An object containing either "data" or "err"
  */
-export default function request(action, options) {
-  let url = "";
-  const env = config.env();
-  //根据环境切换请求url
-  url = `/${env}/${action}`;
-  return fetch(url, options)
-    .then(checkStatus)
-    .then(parseJSON)
-    .then(data => ({ data }))
-    .catch(err => ({ err }));
-}
+ export default async function request(action, options) {
+   let url = "";
+   const env = config.env();
+   //根据环境切换请求url
+   url = `/${env}/${action}`;
+   const response = await fetch(url, options);
+
+   checkStatus(response);
+
+   const data = await response.json();
+   console.log(data);
+   return {data};
+ }
