@@ -28,11 +28,12 @@ function checkStatus(response) {
    const env = config.env();
    //根据环境切换请求url
    url = `/${env}/${action}`;
+   //按需添加公共字段
+
    const response = await fetch(url, options);
 
    checkStatus(response);
 
    const data = await response.json();
-   console.log(data);
    return {data};
  }

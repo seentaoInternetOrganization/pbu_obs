@@ -6,9 +6,9 @@ import React from 'react';
 import { Radio } from 'antd';
 const RadioGroup = Radio.Group;
 import SchoolFrom from '../CreateSchool/SchoolFrom';
+import SchoolList from '../schoolManage/SchoolList';
 
-class Container extends React.Component{
-  render(){
+function Container ({ children, location }){
     return(
       <section id="main-content">
           <section className="wrapper site-min-height">
@@ -17,7 +17,7 @@ class Container extends React.Component{
                       <section className="panel">
                           <div className="panel-body">
                               <div className="form">
-                                  <SchoolFrom />
+                                  {children}
                               </div>
                           </div>
                       </section>
@@ -26,6 +26,5 @@ class Container extends React.Component{
           </section>
       </section>
     );
-  }
 }
 export default Container
