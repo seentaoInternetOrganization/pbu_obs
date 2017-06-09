@@ -1,4 +1,6 @@
 import fetch from 'dva/fetch';
+import config from '../../config/config';
+import constant from './constant';
 
 function parseJSON(response) {
   return response.json();
@@ -21,7 +23,11 @@ function checkStatus(response) {
  * @param  {object} [options] The options we want to pass to "fetch"
  * @return {object}           An object containing either "data" or "err"
  */
-export default function request(url, options) {
+export default function request(action, options) {
+  let url = "";
+  const env = config.env();
+  //根据环境切换请求url
+  url = `/${env}/${action}`;
   return fetch(url, options)
     .then(checkStatus)
     .then(parseJSON)

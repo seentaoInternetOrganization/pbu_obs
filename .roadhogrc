@@ -16,5 +16,32 @@
   "extraBabelPlugins": [
     "transform-runtime",
     ["import", { "libraryName": "antd", "style": "css" }]
-  ]
+  ],
+  "proxy": {
+    "/api": {
+      "target": "http://线上地址/",
+      "changeOrigin": true,
+      "pathRewrite": { "^/api" : "" }
+    },
+    "/simulated": {
+      "target": "http://模拟地址/",
+      "changeOrigin": true,
+      "pathRewrite": { "^/simulated" : "" }
+    },
+    "/test": {
+      "target": "http://测试环境/",
+      "changeOrigin": true,
+      "pathRewrite": { "^/test" : "" }
+    },
+    "/debug": {
+      "target": "http://联调/",
+      "changeOrigin": true,
+      "pathRewrite": { "^/debug" : "" }
+    },
+    "/static": {
+      "target": "http://10.10.16.175:8080/stest/",
+      "changeOrigin": true,
+      "pathRewrite": { "^/static" : "" }
+    }
+  }
 }
