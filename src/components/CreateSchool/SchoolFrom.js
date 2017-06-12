@@ -3,6 +3,8 @@ import { Form, Select, Input, Button } from 'antd';
 import RadioGroup from './RadioGroup';
 import { DatePicker,Cascader } from 'antd';
 import CityData from '../../utils/CityData';
+import { routerRedux } from 'dva/router';
+
 
 const { MonthPicker, RangePicker } = DatePicker;
 const CITY_DATA = require('../../utils/CityData').cityData;

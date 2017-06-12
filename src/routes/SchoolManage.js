@@ -11,13 +11,13 @@ import Container from '../components/layout/Container';
 import SchoolList from '../components/schoolManage/SchoolList';
 import SchoolFrom from '../components/CreateSchool/SchoolFrom';
 
-function CreateSchool({ location }) {
+function SchoolManage({ location }) {
   return (
     <section>
       <Header />
       <Aside />
       <Container location={location}>
-        <SchoolFrom/>
+        <SchoolList/>
       </Container>
       <Footer />
     </section>
@@ -25,4 +25,4 @@ function CreateSchool({ location }) {
   );
 }
 
-export default connect()(CreateSchool);
+export default connect()(SchoolManage);

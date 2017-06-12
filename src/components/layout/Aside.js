@@ -7,7 +7,7 @@ class Aside extends React.Component{
           <div id="sidebar"  className="nav-collapse ">
               <ul className="sidebar-menu" id="nav-accordion">
                   <li>
-                      <a href="index.html">
+                      <a href="index.html" className="active">
                           <span>学校管理</span>
                       </a>
                   </li>
@@ -65,7 +65,7 @@ class Aside extends React.Component{
                       </a>
                   </li>
                   <li className="sub-menu">
-                      <a href="javascript:;" className="active" >
+                      <a href="javascript:;"  >
                           <span>数据统计</span>
                       </a>
                   </li>

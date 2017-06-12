@@ -20,6 +20,10 @@ export default {
         payload: {data}
      });
     },
+    *create({ payload }, { call, put }) {
+        yield put(routerRedux.push(pathname:'/CreateSchool'));
+
+    },
 
   },
 

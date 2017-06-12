@@ -9,15 +9,15 @@ import Aside from '../components/layout/Aside';
 import Footer from '../components/layout/Footer';
 import Container from '../components/layout/Container';
 import SchoolList from '../components/schoolManage/SchoolList';
-import SchoolFrom from '../components/CreateSchool/SchoolFrom';
+import UserList from '../components/userManage/UserList';
 
-function CreateSchool({ location }) {
+function UserManage({ location }) {
   return (
     <section>
       <Header />
       <Aside />
       <Container location={location}>
-        <SchoolFrom/>
+        <UserList/>
       </Container>
       <Footer />
     </section>
@@ -25,4 +25,4 @@ function CreateSchool({ location }) {
   );
 }
 
-export default connect()(CreateSchool);
+export default connect()(UserManage);

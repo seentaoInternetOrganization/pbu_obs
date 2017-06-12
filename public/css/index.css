@@ -2,23 +2,16 @@
 input:focus {
   border: 1px solid #35B355!important;
 }
-.form-group {
-    border:0!important;
-}
 .notify-row {
   margin-top: 20px;
 }
 .form-group .required {
   color: red;
+  padding-left: 5px;
+  display: inline-block;
 }
 .radio {
   display: inline-block;
-}
-.radio input[type=radio]{
-    margin-right:5px;
-}
-.user_count{
-    width: 300px;
 }
 .radio-btn {
   width: 100px;
@@ -38,14 +31,29 @@ input:focus {
 .radio-btn:hover {
   background: #35B355;
 }
-.btn-create,
-.btn-save {
+.btn_create {
   width: 200px;
   height: 36px;
+  margin: 0 auto;
+  display: block;
 }
-.btn-create {
-  margin-right: 30px;
+.btn a {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
+.btn a:hover {
+  text-decoration: none;
+}
+/*.btn_create:hover{
+    background-color:#35B355;
+    border-color:#35B355;
+}
+.btn_create:actived{
+    background-color:#35B355;
+    border-color:#35B355;
+}*/
 .content {
   overflow: hidden;
 }
@@ -55,7 +63,7 @@ input:focus {
 }
 .right_content {
   width: 200px;
-  height: 250px;
+  height: 200px;
   overflow: hidden;
   float: right;
   margin-right: 100px;
@@ -64,13 +72,6 @@ input:focus {
   width: 200px;
   height: 200px;
   display: block;
-}
-.submit{
-    width:100px;
-    height: 36px;
-    border:0;
-    margin:10px auto 0;
-    display: block;
 }
 .city {
   width: 120px;
@@ -95,6 +96,7 @@ input:focus {
 .btn-success-new {
   float: right;
   margin-top: 10px;
+  margin-right:15px;
 }
 .edit {
   text-decoration: underline;
@@ -103,6 +105,98 @@ input:focus {
   color: red;
   cursor: pointer;
 }
+.content td {
+  text-align: center;
+  vertical-align: middle;
+}
 .content a {
   display: block;
+}
+.tb_span{
+    display:block;
+    color:#797979;
+}
+.form_box {
+  width: 600px;
+  margin: 0 auto;
+}
+.form_box label {
+  width: 130px;
+}
+.form_box .col-lg-10 {
+  max-width: 400px;
+}
+.popup {
+  text-align: center;
+}
+.popup p {
+  margin-top: 50px;
+}
+.add_success i {
+  color: #3DCC61;
+}
+.add_err i {
+  color: red;
+}
+.current_school {
+  font-size: 18px;
+}
+.identity span {
+  margin-right: 60px;
+  font-size: 14px;
+}
+.identity a {
+  color: #797979;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.identity a:hover {
+  color: #4d70f4;
+}
+.identity .current {
+  color: #4d70f4;
+}
+.block {
+  margin: 30px 0 10px;
+  display: block;
+  overflow: hidden;
+}
+.block a {
+  float: right;
+  margin-right: 20px;
+  color: #7977979;
+  padding-top: 18px;
+  display: inline-block;
+}
+.block a:hover {
+  color: #3DCC61;
+}
+.block a i {
+  margin-right: 5px;
+}
+.countall {
+  font-size: 12px;
+}
+.modal-header {
+  background: #3DCC61;
+}
+.mem_edit {
+  color: #797979;
+}
+.mem_edit:hover {
+  text-decoration: underline;
+}
+.paging {
+  margin-top: 20px;
+  width: 100px;
+  height: 36px;
+  border-radius: 4px;
+  background: #3DCC61;
+  border: 0;
+  color: #FFF;
+  float: right;
+  font-size: 14px;
+}
+.paging:hover {
+  background: #35B355;
 }

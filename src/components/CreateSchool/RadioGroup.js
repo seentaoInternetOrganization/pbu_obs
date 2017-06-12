@@ -23,26 +23,20 @@ class RadioGroup extends Component {
         const { radios } = this.props;
         const { selectedIndex } = this.state;
         return (
-            <div className="col-lg-10">
+                <div>
                    {this.props.radios.map((item,index)=>{
-                     return <div
-                                className="radio radio-btn"
-                                key={index}
-                                style={{backgroundColor: index==selectedIndex?'#35B355':'#3DCC61'}}
-                            >
-                                <label>
-                                    <input
-                                        type="button"
-                                        value={item}
-                                        onClick={this.onClick.bind(this,index)}
-                                    />
-                                    {item}
-                                </label>
-                            </div>
+                                <button
+                                    key={index}
+                                    className="btn btn-success"
+                                    type="button"
+                                    onClick={this.onClick.bind(this,index)}
+                                    style={{backgroundColor: index==selectedIndex?'#35B355':'#3DCC61'}}
+                                >{item}
+                                </button>
                    })}
-            </div>
-      )
-    }
+                </div>
+        );
+  }
 }
 
 RadioGroup.propTypes = {
