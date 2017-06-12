@@ -23,13 +23,19 @@ function checkStatus(response) {
  * @param  {object} [options] The options we want to pass to "fetch"
  * @return {object}           An object containing either "data" or "err"
  */
- export default async function request(action, options) {
+ export default async function request(action, payload) {
    let url = "";
    const env = config.env();
    //根据环境切换请求url
    url = `/${env}/${action}`;
    //按需添加公共字段
-
+   const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload.params)
+   }
    const response = await fetch(url, options);
 
    checkStatus(response);
