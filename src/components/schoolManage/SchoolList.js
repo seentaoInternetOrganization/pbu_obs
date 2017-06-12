@@ -6,7 +6,8 @@ function SchoolList({ dispatch, schools }) {
   console.log(schools);
   function get() {
     dispatch({
-      type: 'schoolList/fetch'
+      type: 'schoolList/fetch',
+      payload: {params:{}, needUserInfo:false}
     });
   }
     return(

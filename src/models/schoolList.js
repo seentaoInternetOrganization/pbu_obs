@@ -14,7 +14,7 @@ export default {
 
   effects: {
     *fetch({ payload }, { call, put }) {
-      const { data } = yield call(schoolListService.fetch, {});
+      const { data } = yield call(schoolListService.fetch, payload);
       yield put({
         type: 'save',
         payload: {data}
