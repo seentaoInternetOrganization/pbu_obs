@@ -2,6 +2,9 @@
 input:focus {
   border: 1px solid #35B355!important;
 }
+.form-group {
+    border:0!important;
+}
 .notify-row {
   margin-top: 20px;
 }
@@ -10,6 +13,12 @@ input:focus {
 }
 .radio {
   display: inline-block;
+}
+.radio input[type=radio]{
+    margin-right:5px;
+}
+.user_count{
+    width: 300px;
 }
 .radio-btn {
   width: 100px;
@@ -46,7 +55,7 @@ input:focus {
 }
 .right_content {
   width: 200px;
-  height: 200px;
+  height: 250px;
   overflow: hidden;
   float: right;
   margin-right: 100px;
@@ -55,6 +64,13 @@ input:focus {
   width: 200px;
   height: 200px;
   display: block;
+}
+.submit{
+    width:100px;
+    height: 36px;
+    border:0;
+    margin:10px auto 0;
+    display: block;
 }
 .city {
   width: 120px;
